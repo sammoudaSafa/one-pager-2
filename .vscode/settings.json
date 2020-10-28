@@ -1,0 +1,14 @@
+{
+    "npm.enableScriptExplorer": true,
+    "npm.packageManager": "yarn",
+    "tslint.packageManager": "yarn",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    },
+    "files.trimFinalNewlines": true,
+    "files.insertFinalNewline": true,
+    "typescript.format.semicolons": "insert",
+    "javascript.format.semicolons": "insert",
+}
