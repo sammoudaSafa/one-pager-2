@@ -7,7 +7,7 @@ const config = require('./src/config.json');
 
 module.exports = {
     entry: {
-        newProject: './src/main.ts'
+        listMaker: './src/main.tsx'
     },
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -78,7 +78,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'index.html',
             templateParameters: config,
-            chunks: ['vendors~newProject', 'newProject'],
+            chunks: ['vendors~listMaker', 'listMaker'],
             chunksSortMode: 'manual',
             inject: true
         }),

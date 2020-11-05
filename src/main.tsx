@@ -1,14 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './home';
-import { PersonList } from './personList';
+import { EditComment } from 'view/editcomment';
 
-ReactDOM.render(
-    <Router>
-        <Switch>
-            <Route path='/' exact={true} component={Home} />
-            <Route path='/personList' component={PersonList} />
-        </Switch>
-    </Router>
-    , document.getElementById('coreContainer'));
+ReactDOM.render(<EditComment />, document.getElementById('coreContainer'));
