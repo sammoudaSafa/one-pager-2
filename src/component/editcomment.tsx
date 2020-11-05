@@ -1,6 +1,7 @@
 import React from 'react';
 import { CommentItem } from '../model/commentitem';
-import { EditableListItem } from './component/editablelistitem';
+import { EditableListItem } from './editablelistitem';
+
 interface Props { }
 
 interface State { text: string, list: CommentItem[]; }
