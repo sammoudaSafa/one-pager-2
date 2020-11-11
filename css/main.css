@@ -305,8 +305,7 @@ a {
         margin-right: 6rem; } }
 
 .header {
-  height: 20rem;
-  background-color: #2646B5; }
+  height: 20rem; }
   @media (max-width: 900px) {
     .header {
       position: relative;
@@ -849,4 +848,4 @@ address {
       width: 105%;
       font-size: 1.6rem; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
