@@ -418,7 +418,7 @@ a {
     .main-nav__menu li {
       margin-right: 3%; }
       .main-nav__menu li a {
-        color: #393F55;
+        color: #D9D9DB;
         transition: all .4s; }
         .main-nav__menu li a:hover {
           color: rgba(38, 70, 181, 0.8); }

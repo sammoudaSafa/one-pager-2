@@ -10,11 +10,11 @@ export class Nav extends React.Component<Props, State> {
                     <img src='../img/logo-effix.png' alt='logo' />
                 </div>
                 <div className='header__nav flex'>
-                    <nav className='main-nav'>
-                        <ul>
-                            <li>Test</li>
+                    <div className='main-nav'>
+                        <ul className='main-nav'>
+                            <li className='main-nav'><a href=''> Actualités événementielles</a></li>
                         </ul>
-                    </nav>
+                    </div>
                     <ul>
                         <li>Alo</li>
                     </ul>
