@@ -1,8 +1,7 @@
-// import { EditComment } from 'component/editcomment';
-import { EditComment } from 'component/editcomment';
-import { Nav } from 'component/nav';
-import { Nouvelles } from 'component/nouvelles';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { CardList } from 'view/cardlist';
+import { Nav } from 'view/nav';
 
-ReactDOM.render(<><Nav /><EditComment /><Nouvelles /></>, document.getElementById('coreContainer'));
+
+ReactDOM.render(<><Nav /><CardList /> </>, document.getElementById('coreContainer'));

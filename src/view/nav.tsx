@@ -7,7 +7,7 @@ export class Nav extends React.Component<Props, State> {
         return <div className='header'>
             <div className='flex header__box container-big'>
                 <div className='header__logo'>
-                    <img src='../img/logo-effix.png' alt='logo' />
+                    <img src='../img/effix-logo.svg' alt='Effix' />
                 </div>
                 <div className='header__nav flex'>
                     <div className='main-nav'>
@@ -16,7 +16,7 @@ export class Nav extends React.Component<Props, State> {
                         </ul>
                     </div>
                     <ul>
-                        <li>Alo</li>
+                        <li>S'inscrire à l'infolettre</li>
                     </ul>
                 </div>
             </div>
