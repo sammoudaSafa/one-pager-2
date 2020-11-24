@@ -1,10 +1,15 @@
 .container { 
      width: 65%;
-     margin: 0 16% 0 24%;
+     margin: 0 6% 0 33rem;
 
      @include  responsive(desktop) { 
+          width: 60%;
+     } 
+
+     @include  responsive(tablet) { 
           width: 100%;
-          padding: 0 3rem;
+          margin: 0 auto;
+          padding: 0 1.7rem;
      }  
 }
 
@@ -28,10 +33,6 @@
 }
 .u-margin-top-normal {
      margin-top: 6rem;
-
-     @include  responsive(tablet) { 
-          margin-top: 3rem;
-     }
 }
 .u-margin-top-small {
      margin-top: 2rem;

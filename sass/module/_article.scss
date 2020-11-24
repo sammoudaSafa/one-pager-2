@@ -1,18 +1,25 @@
 .article {
      &__info {
-          justify-content: space-between;
+          text-align: right;
      }
 
      &__img {
           width: 100%;
           height: 35rem;
           margin-bottom: 4rem;
-          // background-image: url(../img/monitor.jpg); 
           background-position: center;
           background-size: cover;
+
+          @include  responsive(tablet) { 
+               height: 24rem;
+          } 
      }
 
      p {
           padding-bottom:10rem;
+
+          @include  responsive(tablet) { 
+               padding-bottom: 5.5rem;
+          } 
      }
 }
