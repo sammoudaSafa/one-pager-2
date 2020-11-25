@@ -32,25 +32,27 @@ export class CardList extends React.Component<Props, State> {
         const dateFormat = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
         return <>
 
+            <body className='main u-margin-top-big container'>
 
-            <h1> La liste des commentaires: </h1>
-            {cards.map(card => <div key={card.cardId} style={{ border: '2px solid', width: '400px', textAlign: 'left' }}>
-                <table>
-                    <h3>Titre {card.title.rendred}: </h3>
-                    <tr>
-                        <th>Contenu: </th>
-                        <td> {card.content.rendred}</td>
-                        {/* <div dangerouslySetInnerHTML={{ __html: ExtensionScriptApis.rendred }} /></td> */}
-                    </tr>
-                    <tr>
-                        <th>Date de publication: </th>
-                        <td> {card.publicationDate.toLocaleDateString(undefined /* 'fr-ca' */, dateFormat)}
-                        </td>
-                    </tr>
-                </table>
-                <br />
+                <h1> La liste des commentaires: </h1>
+                {cards.map(card => <div key={card.cardId} style={{ border: '2px solid', width: '400px', textAlign: 'left' }}>
+                    <table>
+                        <h3>Titre {card.title.rendred}: </h3>
+                        <tr>
+                            <th>Contenu: </th>
+                            <td> {card.content.rendred}</td>
+                            {/* <div dangerouslySetInnerHTML={{ __html: ExtensionScriptApis.rendred }} /></td> */}
+                        </tr>
+                        <tr>
+                            <th>Date de publication: </th>
+                            <td> {card.publicationDate.toLocaleDateString(undefined /* 'fr-ca' */, dateFormat)}
+                            </td>
+                        </tr>
+                    </table>
+                    <br />
 
-            </div>)}
+                </div>)}
+            </body>
         </>;
     }
 }

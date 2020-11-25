@@ -1,10 +1,10 @@
 import React from 'react';
 interface Props { }
 interface State { }
-export class Nav extends React.Component<Props, State> {
+export class Footer extends React.Component<Props, State> {
     public render() {
-        return <div>
-            <h1> Nav bar</h1>
+        return <div className='container center'>
+            <h3> GET EFFIX </h3>
         </div>;
     }
 }
