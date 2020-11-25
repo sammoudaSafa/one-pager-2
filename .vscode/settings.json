@@ -1,5 +1,4 @@
 {
-    "npm.enableScriptExplorer": true,
     "npm.packageManager": "yarn",
     "tslint.packageManager": "yarn",
     "editor.formatOnSave": true,
@@ -11,4 +10,5 @@
     "files.insertFinalNewline": true,
     "typescript.format.semicolons": "insert",
     "javascript.format.semicolons": "insert",
+    "git.ignoreLimitWarning": true,
 }

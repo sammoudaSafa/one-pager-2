@@ -71,6 +71,7 @@
 				"destructuring": "all"
 			}
 		],
+		"prefer-method-signature": true,
 		"jsx-self-close": true,
 		"jsx-no-multiline-js": false,
 		"jsx-wrap-multiline": false,
