@@ -10,7 +10,7 @@ interface State {
 }
 
 export class ECardItem extends React.Component<Props, State> {
-    // private api = new Api;
+    private api = new Api;
 
     constructor(props: Props) {
         super(props);
@@ -21,8 +21,7 @@ export class ECardItem extends React.Component<Props, State> {
 
     public render() {
         return <div>
-            <h1>helloo{this.state.title.rendred}</h1>
-            <h2>this is message{this.state.content.rendred}</h2>
+            <h1>Ceci est une carte nouvelle</h1>
         </div>;
     }
 

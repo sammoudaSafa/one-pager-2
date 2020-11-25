@@ -21,6 +21,7 @@ export class CardList extends React.Component<Props, State> {
 
     public async componentDidMount() {
         const cards = (await this.api.getJson('/posts') as any[]).map(CardModel.fromJSON);
+        const imagescards = (await this.api.getJson('/media') as any[]);
         this.setState({ cards });
     }
 
@@ -33,7 +34,7 @@ export class CardList extends React.Component<Props, State> {
 
 
             <h1> La liste des commentaires: </h1>
-            {cards.map(card => <><div key={card.cardId} style={{ border: '2px solid', width: '400px', textAlign: 'left' }}>
+            {cards.map(card => <div key={card.cardId} style={{ border: '2px solid', width: '400px', textAlign: 'left' }}>
                 <table>
                     <h3>Titre {card.title.rendred}: </h3>
                     <tr>
@@ -48,7 +49,8 @@ export class CardList extends React.Component<Props, State> {
                     </tr>
                 </table>
                 <br />
-            </div></>
-            </>;
+
+            </div>)}
+        </>;
     }
 }
