@@ -17,11 +17,12 @@ export class ECardItem extends React.Component<Props, State> {
     }
 
     public render() {
-        return <li>
-            <h1>
-                {this.props.card.title.rendered}</h1>
-            <h3>{this.props.card.content.rendered}</h3>
-        </li>;
+        return <article className='article'>
+            <h2 className='heading-secondary u-margin-top-small u-margin-bottom-small'> {this.props.card.title.rendered}</h2>
+            <p>{this.props.card.content.rendered}</p>
+            <a href='#' className='btn'>Lire la suite</a>
+        </article>
+            ;
     }
 
 }

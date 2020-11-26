@@ -32,12 +32,12 @@ export class CardListOne extends React.Component<Props, State> {
 
         // const dateFormat = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
         return <>
-
-            <h1> La liste des commentaires: </h1>
-            <ul>
-                {cards.map(card =>
-                    <ECardItem key={card.cardId} card={card} />)}
-            </ul>
+            <main className='main u-margin-top-big container'>
+                <section className='main-content flex'>
+                    {cards.map(card =>
+                        <ECardItem key={card.cardId} card={card} />)}
+                </section>
+            </main>
         </>;
     }
 }
