@@ -30,7 +30,6 @@ export class CardListOne extends React.Component<Props, State> {
         const { cards } = this.state;
         if (!cards) { return 'Chargement des nouvelles...'; }
 
-        // const dateFormat = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
         return <>
             <main className='main u-margin-top-big container'>
                 <section className='main-content flex'>

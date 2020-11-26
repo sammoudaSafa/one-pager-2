@@ -3,6 +3,7 @@ export class CardModel {
     public title: string;
     public content: string;
     public date: Date;
+    public link: string;
 
     public static fromJSON(jsonCardModel: CardModel) {
         const cardModel = new CardModel;
