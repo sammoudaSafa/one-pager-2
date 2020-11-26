@@ -34,13 +34,13 @@ export class CardList extends React.Component<Props, State> {
 
             <body className='main u-margin-top-big container'>
 
-                <h1> La liste des commentaires: </h1>
+
                 {cards.map(card => <div key={card.cardId} style={{ border: '2px solid', width: '400px', textAlign: 'left' }}>
                     <table>
-                        <h3>Titre {card.title.rendred}: </h3>
+                        <h3>Titre {card.title.rendered}: </h3>
                         <tr>
                             <th>Contenu: </th>
-                            <td> {card.content.rendred}</td>
+                            <td> {card.content.rendered}</td>
                             {/* <div dangerouslySetInnerHTML={{ __html: ExtensionScriptApis.rendred }} /></td> */}
                         </tr>
                         <tr>
