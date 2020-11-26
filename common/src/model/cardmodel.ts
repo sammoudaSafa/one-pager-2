@@ -1,7 +1,7 @@
 export class CardModel {
     public cardId: number;
     public title: string;
-    public content: string;
+    public excerpt: string;
     public date: Date;
     public link: string;
 

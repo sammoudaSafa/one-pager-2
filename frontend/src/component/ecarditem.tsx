@@ -5,7 +5,7 @@ interface Props { card: CardModel; }
 
 interface State {
     title: string;
-    content: string;
+    excerpt: string;
     date?: Date;
     link: string;
 }
@@ -14,7 +14,7 @@ export class ECardItem extends React.Component<Props, State> {
     constructor(props: Props) {
         super(props);
 
-        this.state = { title: props.card.title, content: props.card.content, date: props.card.date, link: props.card.link };
+        this.state = { title: props.card.title, excerpt: props.card.excerpt, date: props.card.date, link: props.card.link };
     }
 
     public render() {
@@ -23,7 +23,7 @@ export class ECardItem extends React.Component<Props, State> {
         return <article className='article'>
             <span> {this.props.card.date.toLocaleDateString(undefined /* 'fr-ca' */, dateFormat)}</span>
             <h2 className='heading-secondary u-margin-top-small u-margin-bottom-small'> {this.props.card.title.rendered}</h2>
-            <p>{this.props.card.content.rendered}</p>
+            <p>{this.props.card.excerpt.rendered}</p>
             <button className='btn'><a href={this.props.card.link}>Lire la suite</a></button>
         </article>
             ;

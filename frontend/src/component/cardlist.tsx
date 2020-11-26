@@ -1,12 +1,14 @@
 import { Api } from 'api';
 import { CardModel } from 'common';
 import React from 'react';
+import { ECardItem } from './ecarditem';
+
 
 interface Props { }
 interface State {
     cards?: CardModel[];
     title?: string;
-    content?: string;
+    excerpt?: string;
     publicationDate?: Date;
 }
 
@@ -28,30 +30,13 @@ export class CardList extends React.Component<Props, State> {
         const { cards } = this.state;
         if (!cards) { return 'Chargement des nouvelles...'; }
 
-        const dateFormat = { year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric' };
         return <>
-
-            <body className='main u-margin-top-big container'>
-
-
-                {cards.map(card => <div key={card.cardId}>
-                    <table>
-                        <h3>Titre {card.title.rendered}: </h3>
-                        <tr>
-                            <th>Contenu: </th>
-                            <td> {card.content.rendered}</td>
-                            {/* <div dangerouslySetInnerHTML={{ __html: ExtensionScriptApis.rendred }} /></td> */}
-                        </tr>
-                        <tr>
-                            <th>Date de publication: </th>
-                            <td> {card.publicationDate.toLocaleDateString(undefined /* 'fr-ca' */, dateFormat)}
-                            </td>
-                        </tr>
-                    </table>
-                    <br />
-
-                </div>)}
-            </body>
+            <main className='main u-margin-top-big container'>
+                <section className='main-content flex'>
+                    {cards.map(card =>
+                        <ECardItem key={card.cardId} card={card} />)}
+                </section>
+            </main>
         </>;
     }
 }

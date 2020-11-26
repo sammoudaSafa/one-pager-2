@@ -1,4 +1,4 @@
-import { CardListOne } from 'component/cardlistone';
+import { CardList } from 'component/cardlist';
 import { Footer } from 'component/footer';
 import { Nav } from 'component/nav';
 import React from 'react';
@@ -10,6 +10,6 @@ Modal.setAppElement('#coreContainer');
 
 ReactDOM.render(<>
     <Nav />
-    <CardListOne />
+    <CardList />
     <Footer />
 </>, document.getElementById('coreContainer'));
