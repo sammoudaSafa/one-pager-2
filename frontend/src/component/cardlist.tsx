@@ -21,7 +21,6 @@ export class CardList extends React.Component<Props, State> {
 
     public async componentDidMount() {
         const cards = (await this.api.getJson('/posts') as any[]).map(CardModel.fromJSON);
-        const imagescards = (await this.api.getJson('/media') as any[]);
         this.setState({ cards });
     }
 
