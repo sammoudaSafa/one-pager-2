@@ -35,7 +35,7 @@ export class CardList extends React.Component<Props, State> {
             <body className='main u-margin-top-big container'>
 
 
-                {cards.map(card => <div key={card.cardId} style={{ border: '2px solid', width: '400px', textAlign: 'left' }}>
+                {cards.map(card => <div key={card.cardId}>
                     <table>
                         <h3>Titre {card.title.rendered}: </h3>
                         <tr>

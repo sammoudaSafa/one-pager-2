@@ -3,6 +3,7 @@ import { CardModel } from 'common';
 import React from 'react';
 import { ECardItem } from './ecarditem';
 
+
 interface Props { }
 interface State {
     cards?: CardModel[];
@@ -35,7 +36,7 @@ export class CardListOne extends React.Component<Props, State> {
             <h1> La liste des commentaires: </h1>
             <ul>
                 {cards.map(card =>
-                    <ECardItem key={card.title} card={card} />)}
+                    <ECardItem key={card.cardId} card={card} />)}
             </ul>
         </>;
     }
