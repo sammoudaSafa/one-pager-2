@@ -7,9 +7,7 @@ import { ECardItem } from './ecarditem';
 interface Props { }
 interface State {
     cards?: CardModel[];
-    title?: string;
-    excerpt?: string;
-    publicationDate?: Date;
+
 }
 
 export class CardList extends React.Component<Props, State> {

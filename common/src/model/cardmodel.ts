@@ -4,6 +4,7 @@ export class CardModel {
     public excerpt: string;
     public date: Date;
     public link: string;
+    public featured_media: string;
 
     public static fromJSON(jsonCardModel: CardModel) {
         const cardModel = new CardModel;
