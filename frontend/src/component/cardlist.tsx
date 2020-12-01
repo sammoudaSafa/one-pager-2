@@ -20,7 +20,7 @@ export class CardList extends React.Component<Props, State> {
     }
 
     public async componentDidMount() {
-        const cards = (await this.api.getJson('/posts') as any[]).map(CardModel.fromJSON);
+        const cards = (await this.api.getJson('/posts?categories=4') as any[]).map(CardModel.fromJSON);
         this.setState({ cards });
     }
 
