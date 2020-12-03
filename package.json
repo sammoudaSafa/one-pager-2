@@ -1,4 +1,8 @@
 {
+  "name": "effix",
+  "version": "0.1.0",
+  "homepage": "https://effix-landtwo.safa.devwebgarneau.com/",
+  "owner": "sammouda safa",
   "private": true,
   "workspaces": [
     "backend",
