@@ -22,6 +22,37 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  border-radius: 2px;
+  background: #2646B5;
+  color: #F5F5F6;
+  padding: 1.2rem 1.6rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn:hover {
+  background-color: rgba(38, 70, 181, 0.8);
+}
+
+.btn--light {
+  background-color: #F5F5F6;
+  color: #2646B5;
+  padding: 1.2rem 3rem;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+@media (max-width: 900px) {
+  .btn--light {
+    padding: 1.2rem 1.6rem;
+  }
+}
+
+.btn--light:hover {
+  background-color: rgba(245, 245, 246, 0.8);
+}
+
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
@@ -338,5 +369,16 @@ a {
   .article p {
     padding-bottom: 5.5rem;
   }
+}
+
+.publicite__img {
+  width: 30rem;
+  height: 25rem;
+  margin: 2rem auto 5rem;
+}
+
+.publicite__img img {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=main.css.map */
